@@ -1,0 +1,44 @@
+/*------------ address */
+.footer__block {
+   display: flex;
+   align-items: baseline;
+}
+
+.footer__content {
+   background: #2f303a;
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+.footer__logo {
+   color: var(--background-section);
+   font-family: "Raleway";
+
+   @include font(26px, 700, 1.38, 0.03em);
+}
+.location__link {
+   color: var(--background-section);
+}
+.footer__address {
+   flex-grow: 1;
+}
+.address {
+   margin-top: 20px;
+}
+.footer__address--item {
+   @include font(14px, 500, 1.71, 0.03em);
+   font-style: normal;
+   &:not(:last-child) {
+      margin-bottom: 9px;
+   }
+}
+
+.footer__contacts--link {
+   color: rgba(255, 255, 255, 0.6);
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      color: var(--text-active);
+   }
+}

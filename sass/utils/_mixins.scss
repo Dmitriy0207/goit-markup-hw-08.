@@ -1,0 +1,14 @@
+// @include font(px, , , em);
+@mixin font($fz, $fw, $lh, $ls) {
+   font-size: $fz;
+   font-weight: $fw;
+   line-height: $lh;
+   letter-spacing: $ls;
+}
+
+// @include flex;
+@mixin flex {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

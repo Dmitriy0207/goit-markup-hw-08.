@@ -1,0 +1,42 @@
+.button__send {
+   text-align: center;
+}
+
+.conditions {
+   color: var(--text-active);
+   margin-left: 2px;
+}
+.conditions__icon-check {
+   @include flex;
+
+   fill: var(--background-section);
+}
+.modal__check {
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+.conditions__text {
+   @include flex;
+
+   @include font(14px, 500, 1.46, 0.03em);
+
+   color: var(--color-text);
+}
+.conditions__icon {
+   width: 16px;
+   height: 15px;
+
+   border: 1px solid var(--text-header);
+   border-radius: 2px;
+
+   margin-right: 7px;
+
+   @include flex;
+}
+
+.modal__check:checked + .conditions__text {
+   .conditions__icon {
+      background-color: var(--text-active);
+      border: none;
+   }
+}

@@ -1,0 +1,51 @@
+/* -------------------subcribe */
+
+.fooret__send--form {
+   margin-left: 93px;
+}
+.form {
+   display: flex;
+   margin-right: auto;
+   justify-content: flex-end;
+}
+
+.subscribe {
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+.send__input--footer {
+   width: 358px;
+   height: 50px;
+
+   background-color: transparent;
+   border: 1px solid #999;
+   border-radius: 4px;
+
+   color: var(--color-text);
+
+   padding-left: 15px;
+   padding-right: 15px;
+   font-weight: 600;
+
+   outline: none;
+   transition-property: color, border-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      border-color: var(--text-active);
+      color: var(--background-section);
+   }
+}
+
+.footer__button--send {
+   @include flex;
+
+   margin-left: 12px;
+   min-width: 200px;
+   min-height: 50px;
+}
+.footer__button--icon {
+   margin-left: 10px;
+   fill: var(--background-section);
+}

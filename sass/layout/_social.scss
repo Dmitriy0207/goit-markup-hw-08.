@@ -1,0 +1,35 @@
+/* соц сети */
+.social {
+   display: flex;
+   justify-content: center;
+}
+.social__item {
+   width: 44px;
+   height: 44px;
+}
+.social__item + .social__item {
+   margin-left: 10px;
+}
+.social__link {
+   @include flex;
+
+   width: 100%;
+   height: 100%;
+
+   border-radius: 50%;
+
+   color: var(--color-icon-clients);
+
+   transition-property: color, background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      background-color: var(--text-active);
+      color: var(--background-section);
+   }
+}
+
+.social__icon {
+   fill: currentColor;
+}

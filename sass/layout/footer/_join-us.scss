@@ -1,0 +1,30 @@
+/* -------------------join us */
+.footer__join {
+   margin-left: 70px;
+}
+.join-us,
+.subscribe {
+   @include font(14px, 700, 1.1, 0.03em);
+   color: var(--background-section);
+   text-transform: uppercase;
+}
+.footer {
+   @include flex;
+
+   margin-top: 20px;
+}
+.social__item {
+   width: 44px;
+   height: 44px;
+}
+.social__item + .social__item {
+   margin-left: 10px;
+}
+.footer--icon {
+   color: var(--background-section);
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social__icon {
+   fill: currentColor;
+}

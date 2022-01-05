@@ -1,0 +1,48 @@
+/*------------------------заголовки и текст*/
+.features {
+   background-color: var(--background-section);
+   display: flex;
+}
+
+.features__icon-box {
+   @include flex;
+
+   width: 270px;
+   height: 120px;
+   margin-bottom: 30px;
+
+   border: 1px solid transparent;
+   background-color: #f5f4fa;
+
+   border-radius: 4px;
+}
+
+.features__item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.features__icon-box + .features__icon-box {
+   margin-left: 30px;
+}
+
+.features__title {
+   @include font(14px, 700, 1.2, 0.03em);
+
+   font-style: normal;
+   text-transform: uppercase;
+
+   color: var(--text-header);
+
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+.features__text {
+   @include font(14px, 400, 1.7, 0.03em);
+
+   font-style: normal;
+
+   margin-top: 0px;
+   color: var(--color-text);
+
+   max-width: 270px;
+}
