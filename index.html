@@ -43,7 +43,7 @@
                <button type="button" class="button" data-modal-open>Заказать услугу</button>
       </section>
 <!---------------------заголовки и текст--------------------->
-      <!-- <section class="section">
+      <section class="section">
          <div class="conteiner">
             <h2 class="visually-hidden"> Наши приемущества</h2>
             <ul class="features">
@@ -97,9 +97,9 @@
                </li>
             </ul>
          </div>
-      </section>  -->
+      </section> 
 <!--------------------- часть с картинками --------------------->
-      <!-- <section class="section no-padding-top"> 
+      <section class="section no-padding-top section--employment"> 
          <div class="conteiner">   
             <h2 class="section__title">
                Чем мы занимаемся
@@ -107,31 +107,49 @@
                <ul class="employment">
                   <li class="employment__item">
                      <div class="employment__box">
-                        <img src="img/image2.jpg" alt="работа с кодом" width="370" height="294">
-                           <p class="employment__text">
-                              Десктопные приложения
-                           </p>
+                        <picture>
+                           <source srcset="
+                                       img/image2.jpg 1x,
+                                       img/image2.jpg 2x.jpg 2x" media="(min-width:1200px)" />
+                           <img src="img/image2.jpg" alt="работа с кодом" width="370" height="294">
+                        </picture>
+                        
+                        <div class="employment__box-text">
+                           <p class="employment__text">Десктопные приложения</p>
+                        </div>
                      </div>
                </li>
                   <li class="employment__item">
                      <div class="employment__box">
-                        <img src="img/image0.jpg" alt="работа на ноутбуке" width="370" height="294"> 
-                           <p class="employment__text">
-                           Мобильные приложения
-                           </p>
+                        <picture>
+                           <source srcset="
+                                             img/image0.jpg 1x,
+                                             img/image0.jpg 2x.jpg 2x" media="(min-width:1200px)" />
+                           <img src="img/image0.jpg" alt="работа на ноутбуке" width="370" height="294">
+                        </picture>
+                        
+                        <div class="employment__box-text">
+                           <p class="employment__text">Мобильные приложения</p>
+                        </div>
                      </div>
                </li>
                   <li class="employment__item">
                      <div class="employment__box">
-                        <img src="img/image1.jpg" alt="работа с графикой" width="370" height="294"> 
-                           <p class="employment__text">
-                              Дизайнерские решения
-                           </p>
+                        <picture>
+                           <source srcset="
+                                             img/image1.jpg 1x,
+                                             img/image1.jpg 2x.jpg 2x" media="(min-width:1200px)" />
+                           <img src="img/image1.jpg" alt="работа с графикой" width="370" height="294">
+                        </picture>
+                        
+                        <div class="employment__box-text">
+                           <p class="employment__text">Дизайнерские решения</p>
+                        </div>
                      </div>
                </li>
                </ul>
          </div>
-      </section> -->
+      </section>
 <!----------------наша команда----------------->
       <!-- <section class="section section--other-background">
          <div class="conteiner">

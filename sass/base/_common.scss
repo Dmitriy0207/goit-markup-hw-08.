@@ -1,5 +1,13 @@
-body {
-   font-family: "Roboto", sans-serif;
+button {
+   cursor: pointer;
+}
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+a {
+   text-decoration: none;
 }
 /* что бы убрать точки (класс списка)
 .list {
