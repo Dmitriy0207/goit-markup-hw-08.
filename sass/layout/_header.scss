@@ -87,9 +87,6 @@
    }
 }
 .contacts {
-   // display: flex;
-   // margin-left: auto;
-   // align-items: center;
    display: none;
    @media screen and (min-width: 768px) {
       display: block;
@@ -100,9 +97,6 @@
    }
 }
 
-// .contacts__item:not(:last-child) {
-//    margin-right: 50px;
-// }
 .contacts__item:not(:last-child) {
    @media screen and (min-width: 768px) {
       margin-bottom: 10px;

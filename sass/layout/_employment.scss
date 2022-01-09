@@ -13,7 +13,6 @@
 .employment {
    @include flex;
    margin-top: 50px;
-   // flex-basis: calc(100% / 3 - 30px);
 }
 .employment__box {
    position: relative;
