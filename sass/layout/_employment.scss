@@ -9,14 +9,7 @@
    background: var(--background-section);
    padding-top: 0;
 }
-.section__title {
-   @include font(36px, 700, 1.16, 0.03em);
-   font-style: normal;
 
-   text-align: center;
-
-   color: var(--text-header);
-}
 .employment {
    @include flex;
    margin-top: 50px;

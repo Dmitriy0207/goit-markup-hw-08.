@@ -1,13 +1,29 @@
 /* Клиенты */
 .client {
-   @include flex;
-   margin-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   margin: -15px;
+
+   @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+   }
 }
 .client__item {
-   width: 170px;
    height: 92px;
-   &:not(:last-child) {
-      margin-right: 30px;
+
+   flex-basis: calc(100% / 2 - 30px);
+   margin: 15px;
+
+   @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - 30px);
+   }
+
+   @media screen and (min-width: 1200px) {
+      flex-basis: auto;
+      width: 170px;
+      height: 92px;
    }
 }
 

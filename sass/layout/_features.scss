@@ -16,10 +16,14 @@
    display: flex;
    justify-content: center;
    align-items: center;
+
    height: 120px;
    margin-bottom: 30px;
 
    background: #f5f4fa;
+   @media screen and (min-width: 1200px) {
+      width: 270px;
+   }
 }
 .features__item {
    margin-bottom: 30px;
@@ -33,13 +37,6 @@
       margin-right: 30px;
    }
 }
-// .features__item:not(:last-child) {
-//    margin-right: 30px;
-// }
-
-// .features__icon-box + .features__icon-box {
-//    margin-left: 30px;
-// }
 
 .features__title {
    @include font(14px, 700, 1.2, 0.03em);
@@ -64,7 +61,9 @@
    font-style: normal;
 
    color: var(--color-text);
-   // margin-top: 0px;
+   @media screen and (min-width: 1200px) {
+      margin-top: 0px;
 
-   // max-width: 270px;
+      max-width: 270px;
+   }
 }

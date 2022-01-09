@@ -1,14 +1,35 @@
 /*------------ address */
-.footer__block {
-   display: flex;
-   align-items: baseline;
-}
-
 .footer__content {
    background: #2f303a;
-   padding-top: 60px;
-   padding-bottom: 60px;
+   padding: 60px 0;
 }
+
+.footer__block {
+   margin: 0 auto;
+   text-align: center;
+   padding: 0 -15px;
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      text-align: left;
+   }
+}
+
+.footer__tablet {
+   margin-bottom: 60px;
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+   }
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+   }
+}
+
 .footer__logo {
    color: var(--background-section);
    font-family: "Raleway";
@@ -19,7 +40,9 @@
    color: var(--background-section);
 }
 .footer__address {
-   flex-grow: 1;
+   @media screen and (min-width: 1200px) {
+      flex-grow: 1;
+   }
 }
 .address {
    margin-top: 20px;

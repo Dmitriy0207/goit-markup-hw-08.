@@ -1,9 +1,14 @@
 /* -------------------join us */
 .footer__join {
-   margin-left: 70px;
+   @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+   }
 }
 .join-us,
 .subscribe {
+   @media screen and (min-width: 480px) {
+      margin-top: 60px;
+   }
    @include font(14px, 700, 1.1, 0.03em);
    color: var(--background-section);
    text-transform: uppercase;
