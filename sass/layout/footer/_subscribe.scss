@@ -34,13 +34,18 @@
    margin-bottom: 20px;
 }
 .send__input--footer {
-   margin-bottom: 20px;
-   width: 450px;
-   align-content: center;
-
+   @media screen and (max-width: 480px) {
+      margin-bottom: 20px;
+   }
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 20px;
+   }
    @media screen and (min-width: 1200px) {
       width: 358px;
    }
+
+   width: 450px;
+   align-content: center;
 
    height: 50px;
 

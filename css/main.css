@@ -620,12 +620,18 @@ a {
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -636,6 +642,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
 }
 
 .navigation__list::before {
@@ -644,24 +651,8 @@ a {
   border-radius: 2px;
 }
 
-.logo {
-  font-family: "Raleway";
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.38;
-  letter-spacing: 0.03em;
-  color: var(--text-header);
-  margin-right: 93px;
-}
-
-.web-logo {
-  color: var(--text-active);
-}
-
 .navigation__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
@@ -694,7 +685,7 @@ a {
 }
 
 .contacts__link {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -713,32 +704,122 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+  }
+}
+
 .contacts__link:hover, .contacts__link:focus,
 .contacts__link .footer__contacts--link {
   color: var(--text-active);
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
 
 .contacts__icon:hover, .contacts__icon:focus {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    margin-right: 10px;
+  }
+}
+
+.contacts__icon--email {
+  width: 14px;
+  height: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon--email {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts__icon--tel {
+  width: 10px;
+  height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon--tel {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  color: var(--text-header);
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 94px;
+  }
+}
+
+.web-logo {
+  color: var(--text-active);
 }
 
 /*----------------------------------заказать услугу*/
@@ -1393,7 +1474,6 @@ a {
 }
 
 .send__input--footer {
-  margin-bottom: 20px;
   width: 450px;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -1412,6 +1492,18 @@ a {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 480px) {
+  .send__input--footer {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .send__input--footer {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
