@@ -18,9 +18,13 @@
 .conditions__text {
    @include flex;
 
-   @include font(14px, 500, 1.46, 0.03em);
+   @include font(12px, 500, 1.46, 0.03em);
 
    color: var(--color-text);
+   @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+   }
 }
 .conditions__icon {
    width: 16px;

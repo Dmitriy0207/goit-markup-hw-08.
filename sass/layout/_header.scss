@@ -4,12 +4,15 @@
 
 .conteiner__header {
    display: flex;
-   padding-top: 25px;
-   padding-bottom: 25px;
+
    border-bottom-color: #ececec;
    border-bottom-width: 1px;
    border-bottom-style: solid;
    align-items: center;
+   @media screen and (min-width: 768px) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+   }
 }
 
 .navigation {

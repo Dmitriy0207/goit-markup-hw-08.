@@ -25,7 +25,7 @@
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
       ),
-      url("/img/img-mob/img-hero-overlay-mob.jpg");
+      url("./img/img-mob/img-hero-overlay-mob.jpg");
 
    background-size: cover;
    background-repeat: no-repeat;
@@ -40,7 +40,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
          ),
-         url("/img/img-mob/img-hero-overlay-mob-2x.jpg");
+         url("./img/img-mob/img-hero-overlay-mob-2x.jpg");
    }
 
    @media screen and (min-width: 768px) {
@@ -49,7 +49,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
          ),
-         url("/img/img-tab/img-hero-overlay-tab.jpg");
+         url("./img/img-tab/img-hero-overlay-tab.jpg");
       @media (min-device-pixel-ratio: 2),
          (min-resolution: 192dpi),
          (min-resolution: 2dppx) {
@@ -58,7 +58,7 @@
                rgba(47, 48, 58, 0.4),
                rgba(47, 48, 58, 0.4)
             ),
-            url("/img/img-tab/img-hero-overlay-tab-2x.jpg");
+            url("./img/img-tab/img-hero-overlay-tab-2x.jpg");
       }
    }
    @media screen and (min-width: 1200px) {
@@ -69,7 +69,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
          ),
-         url("/img/img-desk/hero-foto.jpg");
+         url("./img/img-desk/hero-foto.jpg");
       @media (min-device-pixel-ratio: 2),
          (min-resolution: 192dpi),
          (min-resolution: 2dppx) {
@@ -78,7 +78,7 @@
                rgba(47, 48, 58, 0.4),
                rgba(47, 48, 58, 0.4)
             ),
-            url("/img/img-desk/hero-foto-2x.jpg");
+            url("./img/img-desk/hero-foto-2x.jpg");
       }
    }
 }
