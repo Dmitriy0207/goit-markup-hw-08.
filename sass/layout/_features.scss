@@ -41,6 +41,7 @@
 .features__title {
    @include font(14px, 700, 1.2, 0.03em);
 
+   text-align: center;
    font-style: normal;
    text-transform: uppercase;
 
